@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  
+    <title>admin</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="logosenjaba">
+          <h1><a href="accueil.html"><i class="sla">Sen</i>Jaba</a></h1>
+        </div>
+          <nav>
+              <ul>
+
+                  <li><a href="categories.html">les produits</a></li>
+                  
+                  <li><a href="deconnect.html">déconnexion</a></li>
+                 
+                 
+              </ul>
+          </nav>
+      
+  </header>
+
+ 
+    <!-- Section Gestion des Vendeurs -->
+    <section id="gestion-vendeurs">
+       <h2> <i class="h2propose">Gestion des vendeurs </i></h2>
+        <form id="ajout-vendeur">
+            <input type="text" id="nom-vendeur" placeholder="Nom du vendeur" required>
+            <input type="email" id="email-vendeur" placeholder="Email du vendeur" required>
+            <button type="submit">Ajouter Vendeur</button>
+        </form>
+
+        <table id="table-vendeurs">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les vendeurs seront affichés ici -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section Messages de Contact -->
+    <section id="messages-contact">
+        <h2><i class="h2propose">message des contacts </i></h2>
+        <table id="table-messages">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les messages seront affichés ici -->
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+  <footer></footer>
+    <div class="footer-content">
+        <div class="footer-about">
+            <h3>À propos de SenJaba</h3>
+            <p>SenJaba est votre plateforme de confiance pour trouver les meilleurs produits en ligne, avec un engagement pour la qualité et le service client.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 SenJaba - Tous droits réservés</p>
+    </div>
+</footer>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

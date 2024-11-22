@@ -1,0 +1,466 @@
+/* Style.css */
+
+/* Global Styles */
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    height: 120px;
+    margin-top: 0;
+    background-color: #f4f2f2f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logosenjaba {
+    font-size: 1.5rem;
+}
+
+.logosenjaba h1 {
+    color: #140303;
+    font-size: 2rem;
+}
+
+.sla {
+    color: #de7600;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul {
+    margin-right: 300px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(21, 14, 7);
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fc8600;
+}
+
+/* Presentation Section */
+#presentation {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#presentation h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #de7600;
+}
+
+#presentation p {
+    font-size: 1.2em;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Categories Section */
+#categories {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+#categories h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #140303;
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+}
+
+.category-item {
+    width: 200px;
+    text-align: center;
+}
+
+.category-item img {
+    width: 105%;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.category-item img:hover {
+    transform: scale(1.05);
+}
+
+.category-item h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Promotions Section */
+#promotions {
+    padding: 60px 20px;
+    background-color: #f3dfc9d0;
+    
+}
+
+#promotions h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #140303;
+}
+
+#promotions p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.promo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+}
+
+.promo-item {
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #de7600;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.promo-item img {
+    width: 105%;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.promo-item p {
+    margin-top: 15px;
+    font-size: 1em;
+   background-color: #d1b08a98;
+    color: #333;
+}
+
+/* Produits Populaires Section */
+#produits-populaires {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+#produits-populaires h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #140303;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+}
+
+.product-item {
+    width: 220px;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 105%;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Recommandations Section */
+#recommandations {
+    padding: 60px 20px;
+    background-color: #f3dfc9d0;
+}
+
+#recommandations h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #140303;
+}
+
+#recommandations p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.recom-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+}
+
+.recom-item {
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recom-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recom-item img {
+    width: 105%;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.recom-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-about {
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-about h3 {
+    color: #de7600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #de7600;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .category-grid,
+    .promo-grid,
+    .product-grid,
+    .recom-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-item,
+    .promo-item,
+    .product-item,
+    .recom-item {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #presentation h2,
+    #categories h2,
+    #promotions h2,
+    #produits-populaires h2,
+    #recommandations h2 {
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+
+/*
+
+*{
+    text-decoration: none;
+}
+body{
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+}
+
+header{
+    height: 120px;
+    margin-top: 0;
+   
+}
+.logosenjaba{
+    font-size: 1.2rem;
+    margin-left: 20px;
+
+}
+.logosenjaba h1{
+    color: #140303;
+}
+
+.sla{
+    color: #de7600;
+    font-weight: 700;
+}
+
+nav ul {
+    margin-left: 320px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+   
+}
+
+nav ul li {
+    margin: 0 10px;
+    
+}
+nav ul li  a {
+    color: rgb(21, 14, 7);
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: #de7600;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+   
+}
+
+
+
+*/
